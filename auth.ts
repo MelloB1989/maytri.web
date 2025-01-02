@@ -26,7 +26,7 @@ export const {
         phone: { label: "Phone", type: "text" },
         otp: { label: "otp", type: "password" },
       },
-      async authorize(credentials, req) {
+      async authorize(credentials) {
         // Replace "/api/auth" with your actual authentication endpoint
         const res = await fetch(`http://localhost:3000/api/authenticate`, {
           // const res = await fetch(
