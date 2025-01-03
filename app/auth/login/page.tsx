@@ -5,7 +5,7 @@ import LoginPage from "./login";
 export default async function Login() {
   const session = await auth();
   if (session?.user.jwt) {
-    redirect(`/dashboard`);
+    redirect(`/chat`);
   }
 
   return <LoginPage />;
